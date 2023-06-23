@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div id="omikuji">表示</div>
+</body>
+<script>
+  let obj = document.getElementById("omikuji");
+  let omikuji = ["大吉", "中吉", "小吉"];
+  // ランダムな数字を生成
+  let num1 = Math.random();
+  let num2 = num1 * 3;
+
+  //
+  let num3 = Math.floor(num2);
+  let msg = omikuji[num3];
+  obj.innerText = msg;
+</script>
+
+</html>
